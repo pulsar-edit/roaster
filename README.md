@@ -7,10 +7,14 @@ You can specify either the contents of a file, or, the path to a file to read.
 ```javascript
 var roaster = require("roaster");
 var fs = require("fs");
-var options = {}
+var options = { isFile: true };
 
 roaster("./markdown.md", options, function(err, contents) {
 	fs.writeFileSync("./markdown.html", contents, "utf8");
+});
+
+roaster("# Hello World", function(err, contents) {
+	fs.writeFileSync("./hello-world.html", contents, "utf8");
 });
 ```
 
