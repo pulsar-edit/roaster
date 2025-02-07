@@ -1,3 +1,5 @@
+# This Repo is archived under Pulsar-Edit since it is not used.
+
 Asynchronously convert a Markdown file into HTML. WOW!
 
 You can specify either the contents of a file, or, the path to a file to read.
